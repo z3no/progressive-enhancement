@@ -1,0 +1,33 @@
+body{
+    max-width: 90%;
+    margin: 0 auto;
+    background-image: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+
+p {
+    font-family: "Didot", "Georgia", "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: rgba(54, 69, 79, 1);
+    line-height: 2;
+}
+
+a {
+    color: darkred;
+    font-family: "Open Sans Condensed", "Open Sans", "Lato", sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color: deeppink;
+}
