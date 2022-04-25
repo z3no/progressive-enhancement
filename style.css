@@ -104,27 +104,13 @@ table {
     text-align: center;
 }
 
-tr:nth-child(1) {
+tr:nth-child(odd) {
     background-color: grey;
     color: white;
 }
 
-tr:nth-child(2) {
+tr:nth-child(even) {
     background-color: white;
-}
-
-tr:nth-child(3) {
-    background-color: grey;
-    color: white;
-}
-
-tr:nth-child(4) {
-    background-color: white;
-}
-
-tr:nth-child(5) {
-    background-color: grey;
-    color: white;
 }
 
 td {
