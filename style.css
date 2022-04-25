@@ -5,8 +5,18 @@ body{
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
+header * {
+    background-color: yellow;
+}
+
+figure > img {
+    width: 400px;
+    float: left;
+    margin: 0 50px 20px 0;
+}
 
 p {
     font-family: "Didot", "Georgia", "Times New Roman", Times, serif;
@@ -15,19 +25,108 @@ p {
     line-height: 2;
 }
 
+p:first-child {
+    font-weight: bold;
+}
+
 a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.links {
     color: darkred;
     font-family: "Open Sans Condensed", "Open Sans", "Lato", sans-serif;
     font-style: italic;
     text-decoration: none;
     text-transform: uppercase;
+    line-height: 2;
 }
 
-a:hover {
+.links:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-a:visited {
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-title);
+    visibility: hidden;
+    opacity: 0;
+    width: auto;
+    background-color: gold;
+    color: darkslategrey;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.links:visited {
     color: deeppink;
+}
+
+em {
+    font-style: normal;
+}
+
+em.good {
+    text-transform: uppercase;
+    color: green;
+}
+
+em.bad {
+    text-transform: uppercase;
+    color: red;
+}
+
+table {
+    width: 40%;
+    line-height: 2;
+    text-align: center;
+}
+
+tr:nth-child(1) {
+    background-color: grey;
+    color: white;
+}
+
+tr:nth-child(2) {
+    background-color: white;
+}
+
+tr:nth-child(3) {
+    background-color: grey;
+    color: white;
+}
+
+tr:nth-child(4) {
+    background-color: white;
+}
+
+tr:nth-child(5) {
+    background-color: grey;
+    color: white;
+}
+
+td {
+    padding: 5px;
+}
+
+.neighbours {
+    color: goldenrod;
+}
+
+.farmer {
+    color: blue;
 }
