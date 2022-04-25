@@ -90,6 +90,14 @@ em.bad {
     color: red;
 }
 
+ul:nth-of-type(1) {
+    list-style-type: upper-roman;
+}
+
+ul li {
+    padding-bottom: 10px;
+}
+
 table {
     width: 40%;
     line-height: 2;
